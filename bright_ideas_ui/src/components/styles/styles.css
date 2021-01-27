@@ -1,0 +1,194 @@
+.overlap_label {
+    position:absolute;
+    margin-top: -11px;
+    margin-left: 10px;
+    background: white;
+    height: 20px;
+}
+.overlap_label_login {
+    width: 45px;
+}
+.overlap_label_register{
+    width: 65px;
+}
+.line_item_div {
+    margin-left: 10px;
+    margin-top: 15px;
+    background: white;
+    width: 285px;
+    height: 25px;
+}
+.password_div{
+    margin-left: 10px;
+    margin-top: 45px;
+    background: white;
+    width: 135px;
+    height: 25px;
+}
+.create_btn {
+    margin-top: 15px ;
+    background: white;
+    width: 60px;
+    height: 25px;
+}
+.register_btn {
+    margin-top: 25px ;
+    background: white;
+    width: 65px;
+    height: 25px;
+}
+.label_style {
+    margin-left: 10px;
+    width: 60px;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.input_text {
+    width: 175px;
+    float: right;
+}
+.login_div {
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    height: 165px;
+    width: 320px;
+    border: 2px solid black;
+}
+.register_div {
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+    height: 300px;
+    width: 320px;
+    border: 2px solid black;
+}
+.error_label {
+    font-size: x-small;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 25px;
+}
+.main_div {
+    display: flex;
+    width: 1000px;
+}
+.welcome_label {
+    margin-left: 30px;
+}
+.label_style{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+.create_idea_div {
+    display: flex;
+    width: 900px;
+}
+.conten_div {
+    margin-left:20px;
+}
+
+.link_button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font-family: arial, sans-serif;
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link_button_space {
+    margin-right: 50px;
+}
+
+.idea_box_span {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 500px;
+    height: 100px;
+}
+
+.list_item_wrapper {
+    display: flex;
+    width: 800px;
+}
+
+.idea_label_span {
+    width: 200px;
+}
+
+.list_item_wrapper_spacing {
+    margin-left: 200px;
+    margin-bottom: 35px;
+}
+
+.content_detail_div {
+    margin-left: 50px;
+}
+
+.content_div > h2{
+    margin-left: 20px;
+}
+
+.idea_input_text {
+    margin-left: 50px;
+    margin-right: 20px;
+    width: 700px;
+    height: 30px;
+}
+
+.up_div {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 900px;
+    height: 120px;
+}
+
+.buttons_div_logout {
+    margin-right: 30px;
+    float: right;
+}
+
+.cell_gray_bg {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.cell_white_bg {
+    background-color: white;
+    padding: 5px;
+}
+
+.content_div_header {
+    width: 900px;
+    height: 35px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.content_div_header > h2 {
+    float: left;
+}
+
+.content_div_header > button {
+    margin-top: 20px;
+    float: right;
+}
+
+.space_up_left {
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.table_style {
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+.space_up {
+    margin-top: 30px;
+    margin-left: 25px;
+}
