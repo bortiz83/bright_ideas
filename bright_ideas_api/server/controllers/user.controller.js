@@ -1,7 +1,6 @@
 const User = require('../models/user.model');
 
 module.exports.registerUser = (req, res) => {
-    console.log(req.body);
     User.create(req.body)
         .then(newUser => res.json({ user: newUser}))
         .catch(err => res.json({ message: 'Could not register a new user ' + req.body, error: err}));
