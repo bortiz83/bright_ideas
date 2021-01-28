@@ -87,19 +87,19 @@ const Register = props => {
                 <center><label>Register</label></center><br/>
             </span>
             <div className="line_item_div"><br/>
-                <label className="label_style">Name:</label><input type="text" className="input_text" onChange={e => setName(e.target.value)} required/>
+                <label className="label_style">Name:</label><input type="text" className="input_text" onChange={e => setName(e.target.value)} value={nameText} required/>
             </div><br/>
             <div className="line_item_div">
-                <label className="label_style">Alias:</label><input type="text" className="input_text" onChange={e => setAlias(e.target.value)} required/>
+                <label className="label_style">Alias:</label><input type="text" className="input_text" onChange={e => setAlias(e.target.value)} value={aliasText} required/>
             </div>
             <div className="line_item_div">
-                <label className="label_style">Email:</label><input type="text" className="input_text" onChange={e => setEmail(e.target.value)} required/>
+                <label className="label_style">Email:</label><input type="text" className="input_text" onChange={e => setEmail(e.target.value)} value={emailText} required/>
             </div>
             <div className="line_item_div">
-                <label className="label_style">Password:</label><input type="password" className="input_text" onChange={e => validatePassword(e.target.value)} required/>
+                <label className="label_style">Password:</label><input type="password" className="input_text" onChange={e => validatePassword(e.target.value)} value={passwordText} required/>
             </div>
             <div className="line_item_div">
-                <label className="label_style">Confirm PW:</label><input type="password" className="input_text" onChange={e => validatePwdConfirmation(e.target.value)} required/>
+                <label className="label_style">Confirm PW:</label><input type="password" className="input_text" onChange={e => validatePwdConfirmation(e.target.value)} value={confirmPwText} required/>
             </div>
             <div><label className="error_label">{errorLabel}</label></div>
             <center><button className="register_btn" onClick={registerUser}>Register</button></center>
