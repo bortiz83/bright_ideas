@@ -10,10 +10,12 @@ const Login = props => {
     const[ideas, setIdeas] = useState([]);
     const[loggedUser, setLoggedUser] = useState(null);
    
-   const createIdea = props => {
+    // Aqui creamos la idea, si la validacion pasa, se hace submit de la forma y la info se va al servidor, si no, la validacion
+    // truena el envio de la forma.
+   const createIdea = () => {
        if (ideaText.length < 5 ) {
-           setErrorLabel('Pwd and pwd confirmation min lenght is 8 chars');
-           return;
+           setErrorLabel('Idea Text needs to be at least 5 characters long');
+           return false;
        }
        axios.post('http://localhost:8000/api/idea', {
            "whoPosted": {
@@ -28,10 +30,12 @@ const Login = props => {
        })
          .then(function (response) {
             setErrorLabel('');
+            document.forms['idea-form'].submit();
          })
          .catch(err => {console.log("Something went wrong when creating an idea.", err)});
    }
 
+   // Cada vez que la pagina se carga, este metodo trae todas las ideas de la base de datos
    const populateIdeas = () => {
        axios.get('http://localhost:8000/api/idea')
          .then(function (response) {
@@ -46,6 +50,7 @@ const Login = props => {
            });
    }
 
+   // En este hook, busca los datos del usuario en base al id en la ruta /bright_ideas/:id (cualquier)
    useEffect(() => {
         axios.get('http://localhost:8000/api/user/' + props.id)
             .then(function (response) {
@@ -71,10 +76,10 @@ const Login = props => {
             </div>
             <br />
             <div>
-                <form onSubmit={createIdea}>
+                <form id="idea-form" onSubmit={e =>{e.preventDefault(); createIdea()}}>
                     <div className="create_idea_div">
                         <input type="text" className="idea_input_text" onChange={e => setIdeaText(e.target.value)} value={ideaText} required/>
-                        <button type="submit" className="idea_btn">Idea !</button>
+                        <button className="idea_btn">Idea !</button>
                     </div>
                 </form>
             </div>

@@ -2,38 +2,40 @@
     position:absolute;
     margin-top: -11px;
     margin-left: 10px;
-    background: white;
+    background:#FEF2F2;
     height: 20px;
+    
 }
 .overlap_label_login {
     width: 45px;
+    
 }
-.overlap_label_register{
+.overlap_label_register{ 
     width: 65px;
 }
 .line_item_div {
     margin-left: 10px;
     margin-top: 15px;
-    background: white;
+    background: transparent;
     width: 285px;
     height: 25px;
 }
 .password_div{
     margin-left: 10px;
     margin-top: 45px;
-    background: white;
+    background: transparent;
     width: 135px;
     height: 25px;
 }
 .create_btn {
     margin-top: 15px ;
-    background: white;
+    background: transparent;
     width: 60px;
     height: 25px;
 }
 .register_btn {
     margin-top: 25px ;
-    background: white;
+    background: transparent;
     width: 65px;
     height: 25px;
 }
@@ -44,12 +46,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .input_text {
-    width: 175px;
+    width: 170px;
     float: right;
+    margin-right:10px ;
 }
 .login_div {
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 40px;
     position: relative;
     height: 165px;
     width: 320px;
@@ -57,7 +60,7 @@
 }
 .register_div {
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 90px;
     position: relative;
     height: 300px;
     width: 320px;
@@ -71,7 +74,17 @@
 }
 .main_div {
     display: flex;
-    width: 1000px;
+    width: 700px;
+    background-color:transparent;
+    height:370px;
+}
+.image {
+    width: 450px;
+    height:300px ; 
+    margin-left:30px ;
+    margin-top: 30px;
+    animation:ease-in-out;
+    
 }
 .welcome_label {
     margin-left: 30px;

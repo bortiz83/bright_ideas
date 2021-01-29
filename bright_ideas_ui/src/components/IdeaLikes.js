@@ -51,7 +51,7 @@ const IdeaLikes = props => {
                 <div className="idea_box_span">{idea == null ? "" : idea.ideaText}</div>
             </div>
             <div className="space_up">
-                <h3>People who likd this post:</h3><p/>
+                <h3>People who liked this post:</h3><p/>
                 <table className="table_style">
                     <thead className="cell_gray_bg">
                         <tr>
