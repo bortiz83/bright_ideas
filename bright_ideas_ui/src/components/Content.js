@@ -49,9 +49,9 @@ const Login = props => {
    useEffect(() => {
         axios.get('http://localhost:8000/api/user/' + props.id)
             .then(function (response) {
-            setLoggedUser(response.data.user);
-            setErrorLabel('');
-            populateIdeas();
+                setLoggedUser(response.data.user);
+                setErrorLabel('');
+                populateIdeas();
             })
             .catch(err => {
                 console.log("Something went wrong", err);

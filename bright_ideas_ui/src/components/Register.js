@@ -12,7 +12,7 @@ const Register = props => {
     const[errorLabel, setErrorLabel] = useState('');
 
     const registerUser = props => {
-        if (passwordText.length < 6 || confirmPwText.length < 6) {
+        if (passwordText.length < 8 || confirmPwText.length < 8) {
             setErrorLabel('Pwd and pwd confirmation min lenght is 8 chars');
             return;
         }
@@ -45,7 +45,6 @@ const Register = props => {
             "ideasLiked":[]
         })
         .then(function(response) {
-            console.log(response);
             setErrorLabel('The user was registered succesfully');
             setAlias('');
             setConfirmPw('');
@@ -55,7 +54,6 @@ const Register = props => {
             navigate('/bright_ideas/' + response.data.user._id);
         })
         .catch(err => { 
-            console.log ("Something went wrong creating the user");
             setErrorLabel("There was an error registering the user: " + err);
         });
 
